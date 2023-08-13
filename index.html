@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wadôudâ</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!--switecher-->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" 
+    disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2"
+     disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" 
+    disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" 
+    disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" 
+    disabled>
+    <link rel="stylesheet" href="./css/style-switcher.css">
+    <link rel="icon" href="./images/pngtree-alphabet-letter-w-with-ornaments-and-flowers-hand-lettering-png-image_2263479-removebg-preview.png" type="image/x-icon"/>
+<style>
+#preloader{
+   
+   background: url('./images/loadeer.gif') no-repeat center center;
+   background-size: 100%;
+   height: 100vh;
+   width: 100vw;
+   position: fixed;
+   z-index: 100;
+}
+#follower {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#follower #circle1 {
+  position: absolute;
+  -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
+  animation: pulse 2s infinite;
+  background: rgb(95, 99, 158);
+  border-radius: 50%;
+  height: 0em;
+  width: 0em;
+  margin-top: 0em;
+  margin-left: 0em;
+}
+#follower #circle2 {
+  position: absolute;
+  -webkit-animation: pulse 4s infinite; /* Chrome, Safari, Opera */
+  animation: pulse 10s infinite;
+  background: rgba(128, 120, 124, 0.8);
+  border-radius: 50%;
+  height: 0em;
+  width: 0em;
+  margin-top: 0em;
+  margin-left: 0em;
+}
+@-moz-keyframes pulse {
+  0% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+  }
+  50% {
+    opacity: 0.9;
+    height: 3em;
+    width: 3em;
+    margin-top: -1.5em;
+    margin-left: -1.5em;
+  }
+  100% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+  }
+  50% {
+    opacity: 0.9;
+    height: 3em;
+    width: 3em;
+    margin-top: -1.5em;
+    margin-left: -1.5em;
+  }
+  100% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+  }
+}
+@-o-keyframes pulse {
+  0% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+  }
+  50% {
+    opacity: 0.9;
+    height: 3em;
+    width: 3em;
+    margin-top: -1.5em;
+    margin-left: -1.5em;
+  }
+  100% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+  }
+  50% {
+    opacity: 0.9;
+    height: 3em;
+    width: 3em;
+    margin-top: -1.5em;
+    margin-left: -1.5em;
+  }
+  100% {
+    opacity: 0.2;
+    height: 1em;
+    width: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+  }
+}
+  
+</style>
+</head>
+<body>
+
+    <div id="follower">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+      </div>
+
+    <div id="preloader"></div>
+<div class="main-container">
+    <div class="aside">
+     <div class="logo">
+        <a href=""><span>W</span>àdoudâ</a>
+     </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+     <ul class="nav">
+        <li><a href="#home" class="active"> <i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#about"> <i class="fa fa-user"></i>About</a></li>
+        <li><a href="#services"> <i class="fa fa-list"></i>Services</a></li>
+        <li><a href="#portfolio"> <i class="fa fa-briefcase"></i>Portfolio</a></li>
+        <li><a href="#contact"> <i class="fa fa-comments"></i>Contact</a></li>
+     </ul>
+     </div>
+     <div class="main-content">
+        <section class="home section " id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info padd-15">
+                         <h3 class="hello">
+                            Hello, my name is <span class="name">Wided Boukouba</span>
+                         </h3>
+                         <h3 class="my-profession">I' m a <span class="typing">Web Developer</span></h3>
+                         <p>I am a resolute and dynamique person .
+                          I am passionate about IT and development.
+                          I have an aptitude to learn new technologies.
+                        I'm in love with Web development . I'm a fast learner and passionate
+                      for learning new technologies. I learn to a professional processes of software  development .
+                    </p>
+                         <a href="#contact" class="btn hire-me">Hire Me</a>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="./images/mee.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+<section class="about section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-content padd-15">
+                <div class="row">
+                    <div class="about-text padd-15">
+                        <h3> I'm <span >` Wided Boukouba `</span></h3>
+                        <p>I a web development with 6 Months of experience Creatively develop your Website. A 
+                          Full stack develper.
+                          I'm Avaible to build a responsive Web site with clean code .
+                          Proficient in Html  Css Java-Script  Bootstrap5 React-Js ES6 
+                          Redux-Tolkiit Express Mongo-DB Fire-Base and Strapi with modern libraries and frameworks.
+                        
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="personal-info padd-15">
+                        <div class="row"></div>
+                          <div class="info-item">
+                            <p>Birthday : <span>11 March 2001</span></p>
+                           </div>
+                           <div class="info-item">
+                            <p>Age : <span>21</span></p>
+                           </div>
+                           <div class="info-item">
+                            <p>Web site: <span>www.widedcv.com</span></p>
+                           </div>
+                           <div class="info-item">
+                            <p>Email<span>widedboukouba64.com</span></p>
+                           </div>
+                          <div class="info-item">
+                            <p>Phone : <span>+216 99361884</span></p>
+                           </div>
+                          <div class="info-item">
+                            <p>City : <span>Tunisia, Medenine</span></p>
+                          
+                         </div>
+                         <div class="info-item">
+                            <p>Freelance: <span>Avaible</span></p>
+                          
+                         </div>
+                         <div class="info-item">
+                            <p>Job : <span>Full Stack Web Developer  </span></p>
+                          
+                         </div>
+                          <div class="row">
+                              <div class="buttons padd-15">
+                                <a href="#" class="btn">Dowenload CV</a>
+                                <a href="#contact" class="btn hire-me">Hire Me</a>
+                              </div>
+                          </div>
+                        </div>
+                    <div class="skills padd-15"> 
+                        <div class="row">
+                            <div class="skill-item padd-15">
+                                <h5>Microsoft Office</h5>
+                                 <div class="progress">
+                                    <div class="progress-in" style="width: 100%;"></div>
+                                    <div class="skill-percent">100%</div>
+                                 </div>
+                            </div>
+                           
+                           
+                             <div class="skill-item padd-15">
+                                 <h5>Canva</h5>
+
+                                 <div class="progress">
+                                    <div class="progress-in" style="width: 100%;"></div>
+                                    <div class="skill-percent">100%</div>
+                                 </div>
+                            </div>
+
+                            <div class="skill-item padd-15">
+                                <h5> Git/Git_hub</h5>
+                                 <div class="progress">
+                                    <div class="progress-in" style="width: 100%;"></div>
+                                    <div class="skill-percent">100%</div>
+                                 </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                 <h5>Language C</h5>
+                                  <div class="progress">
+                                     <div class="progress-in" style="width: 100%;"></div>
+                                     <div class="skill-percent">100%</div>
+                                  </div>
+                             </div>
+                             <div class="skill-item padd-15">
+                              <h5>Html</h5>
+                               <div class="progress">
+                                  <div class="progress-in" style="width: 100%;"></div>
+                                  <div class="skill-percent">100%</div>
+                               </div>
+                          </div>
+                          <div class="skill-item padd-15">
+                            <h5>Css</h5>
+                             <div class="progress">
+                                <div class="progress-in" style="width: 100%;"></div>
+                                <div class="skill-percent">100%</div>
+                             </div>
+                        </div>
+                        <div class="skill-item padd-15">
+                          <h5>API</h5>
+                           <div class="progress">
+                              <div class="progress-in" style="width: 100%;"></div>
+                              <div class="skill-percent">100%</div>
+                           </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>React Js</h5>
+                         <div class="progress">
+                            <div class="progress-in" style="width: 100%;"></div>
+                            <div class="skill-percent">100%</div>
+                         </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>JSX</h5>
+                       <div class="progress">
+                          <div class="progress-in" style="width: 80%;"></div>
+                          <div class="skill-percent">80%</div>
+                       </div>
+                  </div>
+                  <div class="skill-item padd-15">
+                    <h5>Mongo Db</h5>
+                     <div class="progress">
+                        <div class="progress-in" style="width: 80%;"></div>
+                        <div class="skill-percent">80%</div>
+                     </div>
+                </div>
+                <div class="skill-item padd-15">
+                  <h5>Node Js</h5>
+                   <div class="progress">
+                      <div class="progress-in" style="width: 80%;"></div>
+                      <div class="skill-percent">80%</div>
+                   </div>
+              </div>
+              <div class="skill-item padd-15">
+                <h5>ES6</h5>
+                 <div class="progress">
+                    <div class="progress-in" style="width: 60%;"></div>
+                    <div class="skill-percent">60%</div>
+                 </div>
+            </div>
+            <div class="skill-item padd-15">
+              <h5>Redux Toolkit</h5>
+               <div class="progress">
+                  <div class="progress-in" style="width: 60%;"></div>
+                  <div class="skill-percent">60%</div>
+               </div>
+          </div>
+          <div class="skill-item padd-15">
+            <h5>Java Script</h5>
+             <div class="progress">
+                <div class="progress-in" style="width: 60%;"></div>
+                <div class="skill-percent">60%</div>
+             </div>
+        </div>
+        <div class="skill-item padd-15">
+          <h5>Fire Base</h5>
+           <div class="progress">
+              <div class="progress-in" style="width: 60%;"></div>
+              <div class="skill-percent">60%</div>
+           </div>
+      </div>
+      <div class="skill-item padd-15">
+        <h5>Strapi as CMS</h5>
+         <div class="progress">
+            <div class="progress-in" style="width: 60%;"></div>
+            <div class="skill-percent">60%</div>
+         </div>
+    </div>
+                           
+                           
+                           
+                           
+
+                        </div>
+                    </div>
+                </div>
+                <iframe width="0" height="0" src="https://www.youtube.com/embed/q6kzYPfhilg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="0" height="0" src="https://www.youtube.com/embed/q6kzYPfhilg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="0" height="0" src="https://www.youtube.com/embed/q6kzYPfhilg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="0" height="0" src="https://www.youtube.com/embed/q6kzYPfhilg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="0" height="0" src="https://www.youtube.com/embed/q6kzYPfhilg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+
+                   <div class="row">
+                    <div class="education padd-15">
+                        <h3 class="title">Education</h3>
+                        <div class="row">
+                          <div class="timeline-box padd-15">
+                            <div class="timeline shadow-dark">
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2019 - 2020
+                                    </h3>
+                                    <h4 class="timeline-title">Bachelor's degree in computer science</h4>
+                                    <p class="timeline-text">The Bachelor of Science (B.Sc.) or license in computer science and technology 
+                                      is an Bachelor's that allows both to work in computer science and to pursue engineering studies.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2020- 2022
+                                    </h3>
+                                    <h4 class="timeline-title">First year fundamental license in computer management</h4>
+                                    <p class="timeline-text">The fundamental license in Computer Science Applied to Management has forobjective of training, in three years, skills capable of assistingengineers in fields such as:
+                                      The design, construction and programming of information systems
+                                      Automation of business management processes.
+                                      The control and monitoring of an IT project from the needs studyuntil implemented.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2022 - 2023
+                                    </h3>
+                                    <h4 class="timeline-title">Full stack development training (Go My Code)</h4>
+                                    <p class="timeline-text">In Go My Code Gabes :Master Fullstack development with the most modern technologies.
+                                       Learn MERNstack, databases and algorithms to build high-level web applications.</p>
+                                </div>
+                                <div class="timeline-item">
+                                  <div class="circle-dot"></div>
+                                  <h3 class="timeline-date">
+                                      <i class="fa fa-calendar"></i> 2022 - 2023
+                                  </h3>
+                                  <h4 class="timeline-title">Strapi traning Online (Udemy)</h4>
+                                  <p class="timeline-text">Strapi is a headless content management system (CMS). A Headless CMS is a content management system that makes content accessible via REST APIs, GraphQL APIs, or Git workflow. As the name implies,
+                                     it gives the developer the freedom to choose their most suitable frontend setup.</p>
+                              </div>
+                              <div class="timeline-item">
+                                <div class="circle-dot"></div>
+                                <h3 class="timeline-date">
+                                    <i class="fa fa-calendar"></i> 2022 - 2023
+                                </h3>
+                                <h4 class="timeline-title">React native traning Online (Udemy)</h4>
+                                <p class="timeline-text">React Native lets you create truly native apps and doesn't compromise your users' experiences. It provides a core set of platform agnostic native components like View,
+                                   Text, and Image that map directly to the platform 
+                                   native UI building blocks.</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="experience padd-15">
+                        <h3 class="title">Experience</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                              <div class="timeline shadow-dark">
+                                  <div class="timeline-item">
+                                      <div class="circle-dot"></div>
+                                      <h3 class="timeline-date">
+                                          <i class="fa fa-calendar"></i> 2020 - 2020
+                                      </h3>
+                                      <h4 class="timeline-title"> Internship at STB bank medenine </h4>
+                                      <p class="timeline-text">The Société Tunisienne de Banque was created shortly after independence. Entered into activity on March 26, 1958, it is the first specifically Tunisian banking establishment designed to contribute effectively to the economic and social development of the young independent State and this, in a context of disinvestment, 
+                                        disorganization of the credit market and a real haemorrhage of capital abroad.</p>
+                                  </div>
+                                  <div class="timeline-item">
+                                      <div class="circle-dot"></div>
+                                      <h3 class="timeline-date">
+                                          <i class="fa fa-calendar"></i> 2021- 2021
+                                      </h3>
+                                      <h4 class="timeline-title"> Internship at BNA bank medenine </h4>
+                                      <p class="timeline-text">Since its creation in 1959, the BNA has been at the forefront of the economic and financial scene, and has continued to confirm itself on the financial market not only as a bank financing agriculture,
+                                         but also as a universal bank. , citizen, modern and closer to Tunisians.</p>
+                                  </div>
+                               
+                                  <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2022 - 2022
+                                    </h3>
+                                    <h4 class="timeline-title">Departement Training Microsoft Club Issas</h4>
+                                    <p class="timeline-text">The Microsoft ISSATso Club of the Higher Institute of
+                                       Applied Science and Technology of Sousse is a club that aims to revive the culture of knowledge sharing among students. Club members form a community of students passionate about new technologies, who share their ideas and enthusiasm with other students. Some are bloggers, others animate associations, and others organize trainings or conferences in their schools. There is no typical profile,
+                                       any student who wants to share his passion for technology finds its place in the program.</p>
+                                </div>
+                                  <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2023 - 2023
+                                    </h3>
+                                    <h4 class="timeline-title">Full stack and Mobile development (ItAlent's) </h4>
+                                    <p class="timeline-text">We specialize in IT expertise staffing in the 
+                                      MENA region and worldwide, offering the most cost-effective pricing,
+                                       to assist businesses in overcoming challenges that slow down their growth.
+                                        With our expertise and resources, we are dedicated to implementing your IT 
+                                        visions and business goals. Our priority is to support your professional 
+                                        endeavors and ensure efficient operations.
+                                        It
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                   </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <section class="service section" id="services">
+     <div class="contrainer">
+         <div class="row">
+            <div class="section-title padd-15">
+                <h2>Services</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="service-item padd-15">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fa fa-palette"></i>
+                    </div>
+                
+                <h4>Web Design</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    . Architecto ex libero cupiditate itaque possimus .</p>
+            </div></div>
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-laptop"></i>
+                  </div>
+              
+              <h4>Clean Code</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                  . Architecto ex libero cupiditate itaque possimus .</p>
+          </div></div>
+          <div class="service-item padd-15">
+            <div class="service-item-inner">
+                <div class="icon">
+                    <i class="fa fa-palette"></i>
+                </div>
+            
+            <h4>Responsive Design</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                . Architecto ex libero cupiditate itaque possimus .</p>
+        </div></div>
+       
+            <div class="service-item padd-15">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+               
+                <h4>Web development</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    . Architecto ex libero cupiditate itaque possimus .</p>
+            </div> </div>
+            <div class="service-item padd-15">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fa fa-laptop"></i>
+                    </div>
+               
+                <h4>Logo Design</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    . Architecto ex libero cupiditate itaque possimus .</p>
+            </div> </div>
+            <div class="service-item padd-15">
+                <div class="service-item-inner">
+                    <div class="icon">
+                        <i class="fa fa-bullhorn"></i>
+                    
+                </div>
+                <h4>Task management</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                    . Architecto ex libero cupiditate itaque possimus .</p>
+            </div></div>
+         </div>
+     </div>
+   </section>
+       <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="row">
+            <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="portfolio-heading padd-15">
+                <h2>My last Projects:</h2>
+            </div>
+         </div>
+            <div class="row">
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                       <div class="portfolio-img">
+                        <img src="./images/projet-1.png" alt="project">
+                       </div> 
+
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                       <div class="portfolio-img">
+                        <img src="./images/projet-2.png" alt="project">
+                       </div> 
+
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                       <div class="portfolio-img">
+                        <img src="./images/projet-6.png" alt="project">
+                       </div> 
+
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                       <div class="portfolio-img">
+                        <img src="./images/projet-4.png" alt="project">
+                       </div> 
+
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                       <div class="portfolio-img">
+                        <img src="./images/projet-5.png" alt="project">
+                       </div> 
+
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                       <div class="portfolio-img">
+                        <img src="./images/projet-3.png" alt="project">
+                       </div> 
+
+                    </div>
+                </div>
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                       <div class="portfolio-img">
+                        <img src="./images/projet-8.png" alt="project">
+                       </div> 
+
+                    </div>
+                </div>
+           
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                       <div class="portfolio-img">
+                        <img src="./images/projet-7.png" alt="project">
+                       </div> 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+      <section class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>Contact Me</h2>
+                </div>
+             </div>
+             <h3 class="contact-title padd-15"> Have You Any Questions ?</h3>
+             <h4 class="contact-sub-title padd-15">I'M AT YOU SERVICES</h4>
+               <div class="row">
+                  <div class="contact-info-item padd-15">
+                    <div class="icon"> <i class="fa fa-phone"></i></div>
+                    <h4>Call Us On</h4>
+                    <p>+216 99 361 884</p>
+                  </div>
+                  <div class="contact-info-item padd-15">
+                    <div class="icon"> <i class="fa fa-map-marker-alt"></i></div>
+                    <h4>Office</h4>
+                    <p>Freelance</p>
+                  </div>
+                  <div class="contact-info-item padd-15">
+                    <div class="icon"> <i class="fa fa-envelope"></i></div>
+                    <h4>Email</h4>
+                    <p>widedboukouba64@gmail.com</p>
+                  </div>
+                  <div class="contact-info-item padd-15">
+                    <div class="icon"> <i class="fa fa-globe-europe"></i></div>
+                    <h4>Linkedin</h4>
+                    <p>https://tn.linkedin.com/in/wided-boukouba-2549a9250</p>
+                  </div>
+               </div>
+               <h3 class="contact-title padd-15"> SEND ME AN EMAIL</h3>
+               <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+                   <div class="row">
+                       <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group" >
+                                    <div class="mess">
+                                    <input type="text" class="form-control" placeholder="Message">
+                                </div></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                              <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                       </div>
+
+                   </div>
+        </div>
+      </section>
+
+     </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas "></i>
+    </div>
+     <h4>Theme Colors</h4>
+     <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1') "></span>
+        <span class="color-2" onclick="setActiveStyle('color-2') "></span>
+        <span class="color-3" onclick="setActiveStyle('color-3') "></span>
+        <span class="color-4" onclick="setActiveStyle('color-4') "></span>
+        <span class="color-5" onclick="setActiveStyle('color-5') "></span>
+     </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+ <script src="js/script.js"></script>   
+ <script src="./js/style-switcher.js"></script>
+ <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+        loader.style.display = "none";
+    })
+        </script>
+  <script>(function() {
+    var follower, init, mouseX, mouseY, positionElement, printout, timer;
+  
+    follower = document.getElementById('follower');
+  
+    printout = document.getElementById('printout');
+  
+    mouseX = (event) => {
+      return event.clientX;
+    };
+  
+    mouseY = (event) => {
+      return event.clientY;
+    };
+  
+    positionElement = (event) => {
+      var mouse;
+      mouse = {
+        x: mouseX(event),
+        y: mouseY(event)
+      };
+      follower.style.top = mouse.y + 'px';
+      return follower.style.left = mouse.x + 'px';
+    };
+  
+    timer = false;
+  
+    window.onmousemove = init = (event) => {
+      var _event;
+      _event = event;
+      return timer = setTimeout(() => {
+        return positionElement(_event);
+      }, 1);
+    };
+  
+  }).call(this);
+  
+  </script>
+
+</body>
+</html>

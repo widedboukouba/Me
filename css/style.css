@@ -118,8 +118,8 @@ ul{
 {
      display: flex;
    flex-wrap: wrap;
-   margin-left: 15px ;
-   margin-right: -15px;
+   /* margin-left: 15px ;
+   margin-right: -15px; */
    position: relative;
 
 }
@@ -379,6 +379,7 @@ h3.my-profession
 }
 .about .about-content .about-text h3 span{
     color: var(--skin-color);
+
 }
 .about .about-content .about-text p{
     font-size: 16px;
@@ -436,6 +437,7 @@ h3.my-profession
 .about .about-content .skills .fuml 
 {
     display: flex;
+    flex-wrap: wrap;
 }
 .row .fuml .discc
 {
@@ -816,20 +818,13 @@ width: 50%;
     height: 200px;
 
 }
-#preloader
-{
-    background: #000 url(./skins/loader.gif) no-repeat center;
-    background-size: 25%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
+
 @media (max-width:1199px)
 {
+   
     .aside
     {
-        left: -270px;
+       display: none;
     }
     .main-content
     {
@@ -858,6 +853,7 @@ width: 50%;
     {
       display: none;
     }
+    
     .portfolio-item-description{
         display: flex !important;
         position: relative !important;
@@ -868,14 +864,9 @@ width: 50%;
         font-weight: 400;
     }
     .portfolio .portfolio-item-inner .portfolio-img .portfolio-item-description h3{
-        display: none;
+        /* display: none; */
     }
     .portfolio-item-title{color: var(--skin-color);}
-}
-@media (max-width:767px)
-
-
- {
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
@@ -883,9 +874,61 @@ width: 50%;
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .skills, 
-    .about .about-content .personal-info
+    .about .about-content .personal-info 
      {
-        flex: 0 0 100%;
+        flex: 1 0 80%;
         max-width: 100%;
+        padding: 0 0 0 0;
+     }
+     .padd-15 
+     {
+        padding-right: 0px;
+     }
+     .about .about-content .skills .fuml .discc
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200%;
+}
+.about .about-content .personal-info {
+    gap: 10px;
+   text-align: start;
+
+   padding-left: 120px;
+}
+}
+@media (max-width:767px)
+
+
+ {
+    .about .about-content .personal-info {
+        gap: 10px;
+       text-align: start;
+       padding: 0px;
+       
+    }
+    .about .about-content .skills .fuml .discc
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 200%;
+    }
+ 
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills, 
+    .about .about-content .personal-info 
+     {
+        flex: 1 0 80%;
+        max-width: 100%;
+        padding: 0 0 0 0;
+     }
+     .padd-15 
+     {
+        padding-right: 0px;
      }
 }

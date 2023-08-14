@@ -863,9 +863,7 @@ width: 50%;
         padding: 2px 2px 18px !important;
         font-weight: 400;
     }
-    .portfolio .portfolio-item-inner .portfolio-img .portfolio-item-description h3{
-        /* display: none; */
-    }
+ 
     .portfolio-item-title{color: var(--skin-color);}
     .contact .contact-form .col-6,
     .contact .contact-info-item,

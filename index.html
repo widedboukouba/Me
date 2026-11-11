@@ -5,1245 +5,1457 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wîdéd</title>
+  <title>Wided Boukouba | Full Stack Web & Mobile Engineer</title>
+  <meta name="description"
+    content="Portfolio of Wided Boukouba - Full Stack Developer specializing in React.js, React Native, Node.js, MERN Stack, and modern web & mobile application engineering.">
+  <meta name="keywords"
+    content="Wided Boukouba, Full Stack Developer, React Developer, React Native, Mobile Developer, MERN Stack, Medenine Tunisia, Web Developer Portfolio">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/skins/color-1.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!--switecher-->
-  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
-  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-  <link rel="stylesheet" href="./css/style-switcher.css">
+  <!-- Favicon -->
   <link rel="icon"
     href="./images/pngtree-alphabet-letter-w-with-ornaments-and-flowers-hand-lettering-png-image_2263479-removebg-preview.png"
     type="image/x-icon" />
-  <style>
-    /* #preeloader {
 
-      background: url('./images/loadeer.gif') no-repeat center center;
-      background-size: 100%;
-      height: 100vh;
-      width: 100vw;
-      position: fixed;
-      z-index: 100;
-    } */
-    @media (max-width:991px)
-{
-    /* #preeloader {
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        background: #b134e7 url('./images/loadeer.gif') no-repeat center center;
-        background-size: 10%;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        z-index: 100;
-      } */
-    }
-
-    #follower {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-    }
-
-    #follower #circle1 {
-      position: absolute;
-      -webkit-animation: pulse 2s infinite;
-      /* Chrome, Safari, Opera */
-      animation: pulse 2s infinite;
-      background: rgb(95, 99, 158);
-      border-radius: 50%;
-      height: 0em;
-      width: 0em;
-      margin-top: 0em;
-      margin-left: 0em;
-    }
-
-    #follower #circle2 {
-      position: absolute;
-      -webkit-animation: pulse 4s infinite;
-      /* Chrome, Safari, Opera */
-      animation: pulse 10s infinite;
-      background: rgba(128, 120, 124, 0.8);
-      border-radius: 50%;
-      height: 0em;
-      width: 0em;
-      margin-top: 0em;
-      margin-left: 0em;
-    }
-
-    @-moz-keyframes pulse {
-      0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-      }
-
-      50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-      }
-
-      100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-      }
-    }
-
-    @-webkit-keyframes pulse {
-      0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-      }
-
-      50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-      }
-
-      100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-      }
-    }
-
-    @-o-keyframes pulse {
-      0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-      }
-
-      50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-      }
-
-      100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-      }
-    }
-
-    @keyframes pulse {
-      0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-      }
-
-      50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-      }
-
-      100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-      }
-    }
-  </style>
+  <!-- Custom Style Design System -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div id="follower">
-    <div id="circle1"></div>
-    <div id="circle2"></div>
+  <!-- Ambient Background Aura Orbs & Grid -->
+  <div class="bg-ambient">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- ==========================================================================
+       FLOATING GLASS NAVBAR
+       ========================================================================== -->
+  <div class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#home" class="nav-brand">
+          <span class="brand-icon">W</span>
+          <span>Wîdéd</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#portfolio" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+          <li><a href="#services" class="nav-link"><i class="fa-solid fa-layer-group"></i> Services</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for Hire</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
   </div>
 
-  <div id="preeloader"></div>
-  <div class="main-container">
-    <div class="aside">
-      <div class="logo">
-        <a href=""><span>W</span>îdéd</a>
-      </div>
-      <div class="nav-toggler">
-        <span></span>
-      </div>
-      <ul class="nav">
-        <li><a href="#home" class="active"> <i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#about"> <i class="fa fa-user"></i>About</a></li>
-        <li><a href="#services"> <i class="fa fa-list"></i>Services</a></li>
-        <li><a href="#portfolio"> <i class="fa fa-briefcase"></i>Portfolio</a></li>
-        <li><a href="#contact"> <i class="fa fa-comments"></i>Contact</a></li>
-      </ul>
-    </div>
-    <div class="main-content">
-      <section class="home section " id="home">
-        <div class="container">
-          <div class="row">
-            <div class="home-info padd-15">
-              <h3 class="hello">
-                Hello, my name is <span class="name">Wided Boukouba</span>
-              </h3>
-              <h3 class="my-profession">I' m a <span class="typing">Web & Mobile Developer</span></h3>
-              <p>
-               
-                
-                I am a highly motivated Full Stack Developer with a deep passion for crafting innovative digital solutions. My strong problem-solving abilities and natural aptitude for learning allow me to quickly adapt to emerging technologies, ensuring cutting-edge and efficient development. Specializing in both web and mobile applications, I thrive on transforming ideas into seamless, user-centric experiences through clean code and modern frameworks. Committed to excellence, I approach every project with precision, creativity, and a relentless drive to master industry best practices.
-              </p>
-              <a href="#contact" class="btn hire-me">Hire Me</a>
-            </div>
-            <div class="home-img padd-15">
-              <img src="./images/IMG-20240410-WA0013.jpg" alt="">
-            </div>
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" class="mobile-nav-link active">Home</a>
+    <a href="#about" class="mobile-nav-link">About Me</a>
+    <a href="#skills" class="mobile-nav-link">Tech Stack</a>
+    <a href="#portfolio" class="mobile-nav-link">Projects</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="#contact" class="btn btn-primary" style="margin-top: 10px;">Get In Touch</a>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-sparkles"></i> Full Stack Developer | React • Next.js • Node.js • TypeScript • AI
           </div>
-        </div>
-      </section>
 
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Wided Boukouba</span>
+          </h1>
 
-
-
-
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>About Me</h2>
-            </div>
+          <div class="hero-subtitle-wrapper">
+            <span>I build solutions as a</span>
+            <span class="typing-text"></span>
           </div>
-          <div class="row">
-            <div class="about-content padd-15">
-              <div class="row">
-                <div class="about-text padd-15">
-                  
-                  <p>
-                    
-                    I am a highly motivated and results-driven Full Stack Developer with a strong passion for web and mobile development. With one year of hands-on experience, I specialize in building responsive, high-performance web applications and cross-platform mobile apps using modern technologies.
-<br>
-                    My expertise spans:<br>
-                    <br> ✔ Frontend Development: HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, React.js, Redux-Toolkit
-                    <br> ✔ Backend Development: Node.js, Express, MongoDB, Firebase, Strapi
-                    <br> ✔ Mobile Development: React Native (Expo/CLI) for Android & iOS
-                    <br> ✔ Responsive Design: Pixel-perfect, mobile-first development
-                    <br>✔ Clean Code & Best Practices: Maintainable, scalable, and efficient solutions
-                    
-                    <br> I thrive in fast-paced environments, quickly adapting to new technologies and industry trends. My problem-solving mindset and attention to detail allow me to deliver seamless user experiences across all platforms. Whether crafting dynamic websites or scalable mobile apps, I ensure performance, accessibility, and modern design principles are prioritized.
-                    
-                    <br> Committed to continuous learning, I stay ahead of emerging tools and frameworks to provide cutting-edge solutions.
-                    <br> I am eager to leverage my skills to develop impactful, innovative digital experiences that drive success.
 
-                  </p>
-
-                </div>
-              </div>
-              <div class="row ">
-
-                <div class="skills padd-15 ">
-
-                  <div class="row fuml">
-                    <div class="discc">
-                      <div class="skill-item padd-15">
-                        <h5>Microsoft Office</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%;"></div>
-                          <div class="skill-percent">100%</div>
-                        </div>
-                      </div>
-
-
-                      <div class="skill-item padd-15">
-                        <h5>Canva</h5>
-
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%;"></div>
-                          <div class="skill-percent">100%</div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item padd-15">
-                        <h5> Git/Git_hub</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%;"></div>
-                          <div class="skill-percent">100%</div>
-                        </div>
-                      </div>
-                     
-                      <div class="skill-item padd-15">
-                        <h5>Html</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%;"></div>
-                          <div class="skill-percent">100%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>Css 3</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%;"></div>
-                          <div class="skill-percent">100%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>Styled Components</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%;"></div>
-                          <div class="skill-percent">100%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>API</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%;"></div>
-                          <div class="skill-percent">90%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>React Js</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 100%;"></div>
-                          <div class="skill-percent">90%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>React Native</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 80%;"></div>
-                          <div class="skill-percent">80%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>JSX</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 80%;"></div>
-                          <div class="skill-percent">80%</div>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-
-
-
-
-                    <div class="discc">
-                      <div class="skill-item padd-15">
-                        <h5>Mongo Db</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 80%;"></div>
-                          <div class="skill-percent">80%</div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item padd-15">
-                        <h5>Node Js</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 80%;"></div>
-                          <div class="skill-percent">80%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>Wordpress</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 60%;"></div>
-                          <div class="skill-percent">60%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>ES6</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 60%;"></div>
-                          <div class="skill-percent">70%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>Redux Toolkit</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 60%;"></div>
-                          <div class="skill-percent">70%</div>
-                        </div>
-                      </div>
-                      <div class="skill-item padd-15">
-                        <h5>Java Script</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 60%;"></div>
-                          <div class="skill-percent">70%</div>
-                        </div>
-                      </div>
-                   
-                      <div class="skill-item padd-15">
-                        <h5>Strapi as CMS</h5>
-                        <div class="progress">
-                          <div class="progress-in" style="width: 60%;"></div>
-                          <div class="skill-percent">60%</div>
-                        </div>
-                      </div>
-                    
-                    </div>
-
-
-
-
-
-                  </div>
-                </div>
-                <div class="personal-info padd-25 ">
-
-                  <div class="info-item">
-                    <p>Birthday : <span>11 March 2001</span></p>
-                  </div>
-                  <div class="info-item">
-                    <p>Age : <span>23</span></p>
-                  </div>
-                  <div class="info-item">
-                    <p>Web site: <span>widedboukouba.github.io/Me/</span></p>
-                  </div>
-                  <div class="info-item">
-                    <p>Email<span>widedboukouba64@gmail.com</span></p>
-                  </div>
-                  <div class="info-item">
-                    <p>Phone : <span>+216 99361884</span></p>
-                  </div>
-                  <div class="info-item">
-                    <p>City : <span>Sousse</span></p>
-
-                  </div>
-                  <div class="info-item">
-                    <p>Freelance: <span>Avaible</span></p>
-
-                  </div>
-                  <div class="info-item">
-                    <p>Job : <span>Full Stack Web Developer </span></p>
-
-                  </div>
-                  <div class="row">
-                    <div class="buttons padd-15">
-                      <a href="https://cvdesignr.com/p/682ef7f732632"  target="_blank" class="btn">Dowenload CV</a>
-                      <a href="#contact" class="btn hire-me">Hire Me</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <iframe width="0" height="0" src="https://www.youtube.com/embed/q6kzYPfhilg" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-              <iframe width="0" height="0" src="https://www.youtube.com/embed/q6kzYPfhilg" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe><iframe width="0" height="0" src="https://www.youtube.com/embed/q6kzYPfhilg"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-
-
-              <div class="row">
-                <div class="education padd-15">
-                  <h3 class="title">Education</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-
-
-
-
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2022 - 2023
-                          </h3>
-                          <h4 class="timeline-title">Full stack development training (Go My Code)</h4>
-                          <p class="timeline-text">In Go My Code Gabes :Master Fullstack development with the most
-                            modern technologies.
-                            Learn MERNstack, databases and algorithms to build high-level web applications.</p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2022 - 2023
-                          </h3>
-                          <h4 class="timeline-title">React native traning Online (Udemy)</h4>
-                          <p class="timeline-text">React Native lets you create truly native apps and doesn't compromise
-                            your users' experiences. It provides a core set of platform agnostic native components like
-                            View,
-                            Text, and Image that map directly to the platform
-                            native UI building blocks.</p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2022 - 2023
-                          </h3>
-                          <h4 class="timeline-title">Strapi traning Online (Udemy)</h4>
-                          <p class="timeline-text">Strapi is a headless content management system (CMS). A Headless CMS
-                            is a content management system that makes content accessible via REST APIs, GraphQL APIs, or
-                            Git workflow. As the name implies,
-                            it gives the developer the freedom to choose their most suitable frontend setup.</p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2020- 2022
-                          </h3>
-                          <h4 class="timeline-title">First year fundamental license in computer management</h4>
-                          <p class="timeline-text">The fundamental license in Computer Science Applied to Management has
-                            forobjective of training, in three years, skills capable of assistingengineers in fields
-                            such as:
-                            The design, construction and programming of information systems
-                            Automation of business management processes.
-                            The control and monitoring of an IT project from the needs studyuntil implemented.</p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2019 - 2020
-                          </h3>
-                          <h4 class="timeline-title">Bachelor's degree in computer science</h4>
-                          <p class="timeline-text">The Bachelor of Science (B.Sc.) or license in computer science and
-                            technology
-                            is an Bachelor's that allows both to work in computer science and to pursue engineering
-                            studies.</p>
-                        </div>
-
-
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="experience padd-15">
-                  <h3 class="title">Experience</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2024 - 2025
-                          </h3>
-                          <h4 class="timeline-title">Developpeur Full Stack Js   (TOPNET Sousse) </h4>
-                          <p class="timeline-text">
-                           
-I was a web developer at Topnet Sousse  with Happy Team society for a CRM project which facilitates the interconnection of teleoperatur and client.
-                          </p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2023 - 2024
-                          </h3>
-                          <h4 class="timeline-title">Instructeur Full Stack JS  (ENETCOM J'unior Sfax) </h4>
-                          <p class="timeline-text">
-                            With ENET'Com Junior Entreprise, we are pushing the boundaries of IT development in Tunisia. AND i was thier instructor in Bootcamp Full Stack Js MERN Stack.
-                          </p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2023 - 2024
-                          </h3>
-                          <h4 class="timeline-title">Developpeur front end  (Graine de Pub) </h4>
-                          <p class="timeline-text">
-                            Graine de Pub is a communication agency that also has a web department. I worked as an integrator and front-end developer, fixing errors. It was an excellent experience, as integration and front-end development are crucial aspects in creating an effective and aesthetic website
-                          </p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2023 - 2023
-                          </h3>
-                          <h4 class="timeline-title">Full stack and Mobile development (ItAlent's) </h4>
-                          <p class="timeline-text">We specialize in IT expertise staffing in the
-                            MENA region and worldwide, offering the most cost-effective pricing,
-                            to assist businesses in overcoming challenges that slow down their growth.
-                            With our expertise and resources, we are dedicated to implementing your IT
-                            visions and business goals. Our priority is to support your professional
-                            endeavors and ensure efficient operations.
-                            It
-                          </p>
-                        </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2022 - 2022
-                          </h3>
-                          <h4 class="timeline-title">Departement Training Microsoft Club Issas</h4>
-                          <p class="timeline-text">The Microsoft ISSATso Club of the Higher Institute of
-                            Applied Science and Technology of Sousse is a club that aims to revive the culture of
-                            knowledge sharing among students. Club members form a community of students passionate about
-                            new technologies, who share their ideas and enthusiasm with other students. Some are
-                            bloggers, others animate associations, and others organize trainings or conferences in their
-                            schools. There is no typical profile,
-                            any student who wants to share his passion for technology finds its place in the program.
-                          </p>
-                        </div>
-                        
-                     
-
-
-
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="service section" id="services">
-        <div class="contrainer">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Services</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-palette"></i>
-                </div>
-
-                <h4>Web Design</h4>
-                <p> I can convert any XD , Figma Design to crative design with the integration of animation .</p>
-              </div>
-            </div>
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-laptop"></i>
-                </div>
-
-                <h4>Clean Code</h4>
-                <p>And this is by writing a clean code with comments also by copoing the alpha structure .</p>
-              </div>
-            </div>
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-palette"></i>
-                </div>
-
-                <h4>Responsive Design</h4>
-                <p>I can build responsive web design for all devices mobile
-                  , tablet and desktop.</p>
-              </div>
-            </div>
-
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-code"></i>
-                </div>
-
-                <h4>Web development</h4>
-                <p>I can build a full stack website with Html Css Java-Script Bootstrap5 React-Js ES6
-                  Redux-Tolkiit Express Mongo-DB Fire-Base and Strapi with modern libraries and frameworks..</p>
-              </div>
-            </div>
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-mobile"></i> <!-- Changed icon to mobile -->
-                </div>
-                <h4>Mobile Development</h4>
-                <p>I develop cross-platform mobile apps for Android and iOS using React Native with Expo/CLI, leveraging modern JavaScript (ES6+) and native capabilities for smooth performance.</p>
-              </div>
-            </div>
-
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-bullhorn"></i>
-
-                </div>
-                <h4>Task management</h4>
-                <p>Effective task management is crucial for maintaining productivity,
-                  reducing stress, and achieving both short-term and long-term goals.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="portfolio section" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Portfolio</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="portfolio-heading padd-15">
-              <h2>My last Projects:</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="portfolio-item padd-15">
-          
-             <div class="portfolio-item-inner shadow-dark">
-               <div class="portfolio-img">
-                <img src="./images/docsappflow.png" alt="project">
-                 <h3 class="portfolio-item-title">AppFlow Documentation </h3>
-                 <div class="portfolio-item-description">
-                   <h3>AppFlow Documentation</h3>
-                   <span>AppFlow is a no-code dashboard solution for non-technical users. As part of the project, I developed comprehensive documentation using Docusaurus.</span>
-                 </div>
-               </div>
-
-             </div>
-             </div>
-            <div class="portfolio-item padd-15">
-          
-              <a href="https://drive.google.com/file/d/1TUfv_cIk0oqTuNzCyaSZzTBAMRnMf-Jl/view?usp=sharing" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                <img src="./images/sheelni.png" alt="">
-                  <h3 class="portfolio-item-title">Sheelni APP & Dashbord </h3>
-                  <div class="portfolio-item-description">
-                    <h3>Sheelni APP & Dashbord </h3>
-                    <span>SHEELNI is your quick and immediate solution to facilitate and manage your transport and removal or movement of your household appliances and parcels.</span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-            <div class="portfolio-item padd-15">
-          
-              <a href="https://sheelni.dev/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                <img src="./images/Sheelnii.JPG" alt="">
-                  <h3 class="portfolio-item-title">Sheelni</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Sheelni </h3>
-                    <span>SHEELNI is your quick and immediate solution to facilitate and manage your transport and removal or movement of your household appliances and parcels.</span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-            <div class="portfolio-item padd-15">
-          
-              <a href="https://drive.google.com/file/d/1MP3ykwNTvjlMcQSAtu9mWcnphpHtBuyY/view?usp=sharing" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                <img src="./images/HappyTeam.PNG" alt="">
-                  <h3 class="portfolio-item-title">Happy Team CRM</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Happy Team CRM </h3>
-                    <span>I was a web developer at Topnet Sousse with Happy Team society for a CRM project which facilitates the interconnection of teleoperatur and client. </span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-           
-            <div class="portfolio-item padd-15">
-          
-              <a href="https://drive.google.com/file/d/1zluYig_cCyrtB_oAVsw2YmqfovSP2bXJ/view?usp=sharing" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/deliveat.png" alt="">
-                  <h3 class="portfolio-item-title">Deliveat</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Deliveat</h3>
-                    <span>Deliveat is a Dashbord admin of an food delivery it's an angular project  </span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-            <div class="portfolio-item padd-15">
-          
-              <a href="https://drive.google.com/file/d/18fjTUmo_5kZggmK8N3uQXPOqj_KQaPk8/view?usp=sharing" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-               <img src="./images/dashvepe.png" alt="">
-                  <h3 class="portfolio-item-title">VP Dashbord</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Vente Priviligiére Dashbord</h3>
-                    <span>Vente Priviligiére Dashbord is a Dashbord admin of a magasine website it's an angular project  </span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-            <div class="portfolio-item padd-15">
-              <a href="https://hezli.fr" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-
-                  <img src="./images/project-21.PNG" alt="project">
-                  <h3 class="portfolio-item-title">HEZLI</h3>
-                  <div class="portfolio-item-description">
-                    <h3>HEZLI</h3>
-                    <span>HEZLI it's an transporter website .This is a Fullstack project with dashbords . I have been with a groupe of developpers and designer and my task was the creation of the statique pages navbar footer by styled_componend and react js with a responsive way. </span>
-                  </div>
-                </div>
-
-              </div>
-              </a>
-            </div>
-            <div class="portfolio-item padd-15">
-          
-              <a href="https://drive.google.com/file/d/1ofX8Z2Hu1D1CZzKFDIAKba3B8-IwfGGR/view?usp=sharing" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-          <img src="./images/ileyki.png" alt="">
-                  <h3 class="portfolio-item-title">Ilayki</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Ilayki</h3>
-                    <span>Ilayki is a magasine website it's an  angular project </span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-            <div class="portfolio-item padd-15">
-              <a href="https://grainedepube.wordpress.com/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/graine.png" alt="project">
-                  <h3 class="portfolio-item-title">Graine de pub</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Graine de pub</h3>
-                    <span> This is a wordpress website it's a statique website of an agancy</span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-            <div class="portfolio-item padd-15">
-              <a href="https://widedboukouba.github.io/Head_boost/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/projet-1.png" alt="project">
-                  <h3 class="portfolio-item-title">HEAD BOOST</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Head Boost</h3>
-                    <span> This is a HTML end CSS project. it's like a vitrine web site</span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-          
-            <div class="portfolio-item padd-15">
-              <a href="https://widedboukouba.github.io/Groco/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/projet-6.png" alt="project">
-                  <h3 class="portfolio-item-title">GroCo</h3>
-                  <div class="portfolio-item-description">
-                    <h3>GroCo</h3>
-                    <span>Groco is an e-commerce web site it's a HTML and CSS prject</span>
-                  </div>
-                </div>
-</a>
-              </div>
-            </div>
-            <div class="portfolio-item padd-15">
-              <a href="https://widedboukouba.github.io/Tourist/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/project-20.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Travel</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Tourism</h3>
-                    <span>Logo is an travel Agency website It's a HTML and CSS project</span>
-                  </div>
-                </div>
-</a>
-              </div>
-            </div>
-            <div class="portfolio-item padd-15">
-              
-              <a href="https://64eb431e17d1f35d6cf0e021--papaya-bublanina-9f5342.netlify.app" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-
-                  <img src="./images/project-15.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Academia</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Academia</h3>
-                    <span>Academia is an education web site it's a React JS project. </span>
-                  </div>
-                </div>
-
-              </div>
-              </a>
-            </div>
-            <div class="portfolio-item padd-15">
-              <a href="https://widedboukouba.github.io/Tourism-Green/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-
-                  <img src="./images/project-13.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Tourism</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Travel</h3>
-                    <span>Tourism is an travel website It's a HTML and CSS project </span>
-                  </div>
-                </div>
-
-              </div>
-              </a>
-            </div>
-            <div class="portfolio-item padd-15">
-              <a href="https://widedboukouba.github.io/Me/" target="_blank">
-              
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/widedd.JPG" alt="project">
-                  <h3 class="portfolio-item-title">Portfolio</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Portfolio</h3>
-                    <span>It's my portfolio website create with HTML CSS and JavaScript.</span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-
-
-            <div class="portfolio-item padd-15">
-          
-              <a href="https://widedboukouba.github.io/Coffena/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/projet-3.png" alt="project">
-                  <h3 class="portfolio-item-title">Cofee Shop</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Cofenna</h3>
-                    <span>Cofenna it's a coffeshop web site create with HTML CSS and DOM</span>
-                  </div>
-                </div>
-
-              </div></a>
-            </div>
-            
-            <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/project-17.png" alt="project">
-                  <h3 class="portfolio-item-title">Wichat</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Wichat</h3>
-                    <span>A social Media website with chat module it's a MERN project.</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            
-            <div class="portfolio-item padd-15">
-              <a href="https://widedboukouba.github.io/Spiner/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/projet-8.png" alt="project">
-                  <h3 class="portfolio-item-title">Spinner</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Spinner</h3>
-                    <span>A game create with HTML CSS and JavaScript</span>
-                  </div>
-                </div>
-
-              </div>
+          <p class="hero-description">
+            Full Stack Developer skilled in React, Next.js, Node.js, TypeScript, databases, REST APIs, browser
+            extensions, and AI-driven features. Passionate about building high-performance web and mobile applications
+            for remote opportunities.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
+            <a href="https://cvdesignr.com/p/682ef7f732632" target="_blank" class="btn btn-secondary">
+              <i class="fa-solid fa-download"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number gradient-text">2+</span>
+              <span class="stat-label">Years Experience</span>
             </div>
-
-   
-            
-            <div class="portfolio-item padd-15">
-              <a href="https://widedboukouba.github.io/Movie_Design/" target="_blank">
-         
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/project-16.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Flakes</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Movie App</h3>
-                    <span>A Movie App created by HTML and Css</span>
-                  </div>
-                </div>
-
-              </div></a>
+            <div class="stat-item">
+              <span class="stat-number gradient-text-cyan">25+</span>
+              <span class="stat-label">Projects Completed</span>
             </div>
-            <div class="portfolio-item padd-15">
-              <a href="https://heartfelt-cactus-218919.netlify.app" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="./images/project-9.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Shopping Cart</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Shopping Cart</h3>
-                    <span>A Shopping carte created by HTML CSS and DOM</span>
-                  </div>
-                </div>
-
-
-              </div></a>
+            <div class="stat-item">
+              <span class="stat-number gradient-text">100%</span>
+              <span class="stat-label">Clean Code Quality</span>
             </div>
-            <div class="portfolio-item padd-15">
-              <a href="https://64d93843d2d5de4984d980b2--darling-sunburst-7ab514.netlify.app" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-
-                  <img src="./images/project-10.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Todo App</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Todo App</h3>
-                    <span>A todo_app created bY React js and redux Tolkiit</span>
-                  </div>
-                </div>
-
-              </div>
-              </a>
-            </div>
-
-
-            <div class="portfolio-item padd-15">
-              <a href="https://widedboukouba.github.io/Food_Lover/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-
-                  <img src="./images/project-11.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Food Lover</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Food Lover</h3>
-                    <span>Food restorent web site created with HTML CSS </span>
-                  </div>
-                </div>
-
-              </div>
-              </a>
-            </div>
-         
-            <div class="portfolio-item padd-15">
-              <a href="https://widedboukouba.github.io/Tatto_master/" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-
-                  <img src="./images/project-12.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Tatto House</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Tatto House</h3>
-                    <span>Tatto House a Tattoer website created With HTML and CSS</span>
-                  </div>
-                </div>
-
-              </div>
-              </a>
-            </div>
-      
-            <div class="portfolio-item padd-15">
-              <a href="https://64eb4538f3c7705c6f2dc963--cerulean-pony-1aceef.netlify.app" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-
-                  <img src="./images/project-22.PNG" alt="project">
-                  <h3 class="portfolio-item-title">WB Movies</h3>
-                  <div class="portfolio-item-description">
-                    <h3>WB Movies</h3>
-                    <span>WB Movies  App created by React and Redux Cruds...   </span>
-                  </div>
-                </div>
-
-              </div>
-              </a>
-            </div>
-          
-            <div class="portfolio-item padd-15">
-              <a href="https://64eb3f8dbb00f20008c247fb--deft-hotteok-cca088.netlify.app" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-
-                  <img src="./images/project-14.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Gosto</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Gosto</h3>
-                    <span>Gosto is a magasine website .This project is created by React Redux Reducer</span>
-                  </div>
-                </div>
-
-              </div>
-              </a>
-            </div>
-            <div class="portfolio-item padd-15">
-              <a href="https://64d93843d2d5de4984d980b2--darling-sunburst-7ab514.netlify.app" target="_blank">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-
-                  <img src="./images/project-18.PNG" alt="project">
-                  <h3 class="portfolio-item-title">Mon  Doctor</h3>
-                  <div class="portfolio-item-description">
-                    <h3>Mon Doctor</h3>
-                    <span>
-                      Mon Doctor it's a doctor website. 
-                      This is a MERN project with three dashbords.
-                    </span>
-                  </div>
-                </div>
-
-              </div>
-              </a>
-            </div>
-        
-
-      
-        
           </div>
         </div>
-      </section>
-      <section class="contact section" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Contact Me</h2>
+
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <div class="portrait-img-wrapper">
+              <img src="./images/wided_profile.jpg" alt="Wided Boukouba" class="portrait-img">
+              <div class="portrait-overlay"></div>
+            </div>
+
+            <div class="float-card float-card-1">
+              <div class="float-icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="float-info">
+                <h5>React & Next.js</h5>
+                <p>Full Stack Specialist</p>
+              </div>
+            </div>
+
+            <div class="float-card float-card-2">
+              <div class="float-icon">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div class="float-info">
+                <h5>AI & TypeScript</h5>
+                <p>Modern App Builder</p>
+              </div>
             </div>
           </div>
-          <h3 class="contact-title padd-15"> Have You Any Questions ?</h3>
-          <h4 class="contact-sub-title padd-15">I'M AT YOU SERVICES</h4>
-          <div class="row">
-            <div class="contact-info-item padd-15">
-              <div class="icon"> <i class="fa fa-phone"></i></div>
-              <h4>Call Us On</h4>
-              <p>+216 99 361 884</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT & TIMELINE SECTION
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-user-gear"></i> Background</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A glimpse into my technical journey, passion for building scalable software, and
+          career milestones.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Professional Profile</h3>
+          <p>
+            I am a Full Stack Developer with experience in web and mobile application development, working primarily
+            with modern JavaScript and TypeScript stacks including <strong>React, Next.js, Node.js, PostgreSQL, MongoDB,
+              Prisma, REST APIs, and AI-driven features</strong>.
+          </p>
+          <p>
+            My experience spans full stack Web & Mobile products (Sheelni, Addvocate, Topnet CRM), browser extensions
+            (Plasmo), and AI prompting integration. I am eager to contribute to remote product development while
+            continuing to grow as a Full Stack & AI Engineer.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item-row">
+              <span class="label">Location</span>
+              <span class="val">Tunis / Medenine, Tunisia</span>
             </div>
-            <div class="contact-info-item padd-15">
-              <div class="icon"> <i class="fa fa-map-marker-alt"></i></div>
-              <h4>Office</h4>
-              <p>Freelance</p>
+            <div class="info-item-row">
+              <span class="label">Age</span>
+              <span class="val">25</span>
             </div>
-            <div class="contact-info-item padd-15">
-              <div class="icon"> <i class="fa fa-envelope"></i></div>
-              <h4>Email</h4>
+            <div class="info-item-row">
+              <span class="label">Email</span>
+              <span class="val">widedboukouba64@gmail.com</span>
+            </div>
+            <div class="info-item-row">
+              <span class="label">Phone</span>
+              <span class="val">+216 99361884</span>
+            </div>
+            <div class="info-item-row">
+              <span class="label">Languages</span>
+              <span class="val">Arabic • French • English</span>
+            </div>
+            <div class="info-item-row">
+              <span class="label">Career Goal</span>
+              <span class="val gradient-text">Open to Remote Full Stack Opportunities</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <h3>Core Competencies</h3>
+          <p>
+            Key areas of technical expertise and hands-on execution:
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 10px;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <i class="fa-solid fa-check-circle"
+                style="color: var(--accent-emerald); font-size: 1.1rem; margin-top: 4px;"></i>
+              <div>
+                <strong style="color: var(--text-main);">Full Stack Web Engineering</strong>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">React, Next.js, Node.js, TypeScript, REST APIs,
+                  PostgreSQL, MongoDB, Prisma, Mongoose.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <i class="fa-solid fa-check-circle"
+                style="color: var(--accent-cyan); font-size: 1.1rem; margin-top: 4px;"></i>
+              <div>
+                <strong style="color: var(--text-main);">Cross-Platform Mobile & Extensions</strong>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">React Native for iOS & Android, Plasmo for
+                  modern Chrome browser extensions.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <i class="fa-solid fa-check-circle"
+                style="color: var(--accent-purple); font-size: 1.1rem; margin-top: 4px;"></i>
+              <div>
+                <strong style="color: var(--text-main);">AI Prompting & Feature Integration</strong>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Integrating Language Models, AI prompting
+                  techniques, and AI-driven features into products.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience & Education Tabs -->
+      <div class="tabs-container">
+        <button class="tab-btn active" data-tab="experience">
+          <i class="fa-solid fa-briefcase"></i> Experience Timeline
+        </button>
+        <button class="tab-btn" data-tab="education">
+          <i class="fa-solid fa-graduation-cap"></i> Education & Training
+        </button>
+      </div>
+
+      <!-- Experience View -->
+      <div class="timeline-view active" id="experience-timeline">
+        <div class="timeline-wrapper">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Full Stack Web & Mobile Developer</h4>
+                  <span class="timeline-company">Addvocate — Tunis, Tunisia</span>
+                </div>
+                <span class="timeline-date">2025 – 2026</span>
+              </div>
+              <p class="timeline-desc">
+                At Advocate, I worked on the Nudge CRM ecosystem, contributing to its web platform while independently
+                designing and developing a fully compatible browser extension with a responsive, dynamic, and fluid user
+                experience. I also built a mobile application featuring authentication, meeting summaries, meeting
+                management, and an AI-powered chat assistant capable of creating and managing meetings, deals, and
+                tasks, as well as retrieving real-time deal information. Additionally, I developed an administration
+                dashboard to manage users and companies and monitor token consumption and usage across client accounts.
+                I also contributed to the core Nudge CRM platform, working on integrations, tasks, deals, the Adi AI
+                assistant, meetings, contacts, and overall workflow management.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Web & Mobile Developer</h4>
+                  <span class="timeline-company">Sheelni — Tunis, Tunisia (Remote)</span>
+                </div>
+                <span class="timeline-date">2024 – 2025</span>
+              </div>
+              <p class="timeline-desc">
+                I contributed to the development of the Sheelni ecosystem, including its main web application and two
+                mobile applications: a customer application and a driver application. On the customer side, I
+                implemented order tracking features, allowing users to view their orders and follow their real-time
+                locations on an interactive traffic map. For the driver application, I developed workflows to display
+                assigned orders, follow navigation routes on a live map, and update delivery statuses throughout the
+                delivery process. I also handled delivery lifecycle management, including assignment, completion,
+                cancellations, and situations where customers could not be reached.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Full Stack Web Developer</h4>
+                  <span class="timeline-company">Topnet — Sousse, Tunisia</span>
+                </div>
+                <span class="timeline-date">2024</span>
+              </div>
+              <p class="timeline-desc">
+                Worked as a Full Stack Web Developer, contributing to the development and implementation of web
+                application features and participating in the overall application development process.Engineered a
+                comprehensive CRM web application (Happy Team) for Topnet Sousse, streamlining real-time
+                communication between teleoperators and customers.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Web Development Instructor</h4>
+                  <span class="timeline-company">Enetcom Junior — Sfax, Tunisia</span>
+                </div>
+                <span class="timeline-date">2023</span>
+              </div>
+              <p class="timeline-desc">
+                Delivered full stack web development training to engineering students, introducing them to modern web
+                application development concepts and technologies. I also guided students throughout the development of
+                their final-year project (PFE), based on the MERN stack, providing technical support and guidance during
+                implementation.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Web Integrator & Front-End Web Developer</h4>
+                  <span class="timeline-company">Graine de Pub — Sousse, Tunisia</span>
+                </div>
+                <span class="timeline-date">2023</span>
+              </div>
+              <p class="timeline-desc">
+                Started as a Web Integrator, working on the integration and implementation of more than 10 web projects.
+                I then progressed to a Front-End Developer role, contributing to three additional projects involving
+                dashboards, mobile applications, and web applications, while developing my skills in responsive
+                interfaces and front-end development.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Web & Mobile Developer</h4>
+                  <span class="timeline-company">Italents — Gabes, Tunisia</span>
+                </div>
+                <span class="timeline-date">2023</span>
+              </div>
+              <p class="timeline-desc">
+                Completed a pre-employment internship before continuing to contribute to development projects within the
+                company. I worked as a Full Stack Web Developer on Hezli, a transport-service web application, gaining
+                hands-on experience in end-to-end web development. I also contributed to the development of a mobile
+                application, expanding my experience across web and mobile technologies.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Financial Secretary</h4>
+                  <span class="timeline-company">Issas Action Club — Sfax, Tunisia</span>
+                </div>
+                <span class="timeline-date">2022</span>
+              </div>
+              <p class="timeline-desc">
+                Managed financial administration, budgeting, and financial reports for student community activities.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Digital Marketing Department</h4>
+                  <span class="timeline-company">Ider Association Issas — Sfax, Tunisia</span>
+                </div>
+                <span class="timeline-date">2021</span>
+              </div>
+              <p class="timeline-desc">
+                Spearheaded digital marketing strategy, social media campaigns, and event communications.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Training Department</h4>
+                  <span class="timeline-company">Microsoft Issas Club — Sfax, Tunisia</span>
+                </div>
+                <span class="timeline-date">2021</span>
+              </div>
+              <p class="timeline-desc">
+                Organized technical workshops and community training sessions for students passionate about software
+                development and new technologies.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Education View -->
+      <div class="timeline-view" id="education-timeline">
+        <div class="timeline-wrapper">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Bachelor's Degree in Computer Science</h4>
+                  <span class="timeline-company">ISSSAS Sfax</span>
+                </div>
+                <span class="timeline-date">2022</span>
+              </div>
+              <p class="timeline-desc">
+                Academic degree in Computer Science focusing on software engineering, computer system architecture, data
+                structures, and algorithms.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Full Stack Web Developer Bootcamp</h4>
+                  <span class="timeline-company">Go My Code Gabes</span>
+                </div>
+                <span class="timeline-date">Sep 2022 – Mar 2023</span>
+              </div>
+              <p class="timeline-desc">
+                Mastered fullstack JavaScript software development, MERN Stack (MongoDB, Express, React, Node), REST API
+                architecture, and modern web deployment.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">React Native Certification</h4>
+                  <span class="timeline-company">Udemy</span>
+                </div>
+                <span class="timeline-date">2023</span>
+              </div>
+              <p class="timeline-desc">
+                Specialized training in cross-platform mobile development for iOS & Android using React Native and Expo.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Strapi Backend Certification</h4>
+                  <span class="timeline-company">Udemy</span>
+                </div>
+                <span class="timeline-date">2023</span>
+              </div>
+              <p class="timeline-desc">
+                Advanced training on building headless API architectures using Strapi CMS with REST & GraphQL API
+                endpoints.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h4 class="timeline-title">Technical High School Diploma</h4>
+                  <span class="timeline-company">Medenine</span>
+                </div>
+                <span class="timeline-date">2019 – 2020</span>
+              </div>
+              <p class="timeline-desc">
+                Secondary education technical high school degree specializing in computer science fundamentals.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SKILLS & TECH STACK SECTION
+       ========================================================================== -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-microchip"></i> Stack</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">The tools, frameworks, and technologies I leverage to build modern digital products.
+        </p>
+      </div>
+
+      <div class="skills-filter-container">
+        <button class="filter-btn active" data-filter="all">All Tech</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend & DB</button>
+        <button class="filter-btn" data-filter="ai">AI & Extensions</button>
+        <button class="filter-btn" data-filter="mobile">Mobile & Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend Skills -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Next.js & React</div>
+            <span class="skill-level-tag">Advanced</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">TypeScript (TSX)</div>
+            <span class="skill-level-tag">Advanced</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">JavaScript (ES6+)</div>
+            <span class="skill-level-tag">Advanced</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fa-solid fa-wind"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Tailwind CSS</div>
+            <span class="skill-level-tag">Advanced</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Redux & Hooks</div>
+            <span class="skill-level-tag">Proficient</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fa-solid fa-paint-brush"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Styled Components</div>
+            <span class="skill-level-tag">Advanced</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">HTML5 & CSS3</div>
+            <span class="skill-level-tag">Expert</span>
+          </div>
+        </div>
+
+        <!-- Backend & DB Skills -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Node.js & Express</div>
+            <span class="skill-level-tag">Proficient</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">REST APIs</div>
+            <span class="skill-level-tag">Advanced</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">PostgreSQL</div>
+            <span class="skill-level-tag">Proficient</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <div class="skill-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">MongoDB & Mongoose</div>
+            <span class="skill-level-tag">Proficient</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="backend">
+          <div class="skill-icon"><i class="fa-solid fa-gem"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Prisma ORM</div>
+            <span class="skill-level-tag">Proficient</span>
+          </div>
+        </div>
+
+        <!-- AI & Extensions -->
+        <div class="skill-card" data-category="ai">
+          <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">AI Prompting & LLM Features</div>
+            <span class="skill-level-tag">Advanced</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="ai">
+          <div class="skill-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Plasmo (Extensions)</div>
+            <span class="skill-level-tag">Proficient</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="ai">
+          <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Strapi CMS</div>
+            <span class="skill-level-tag">Proficient</span>
+          </div>
+        </div>
+
+        <!-- Mobile & Tools -->
+        <div class="skill-card" data-category="mobile">
+          <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">React Native</div>
+            <span class="skill-level-tag">Proficient</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="mobile">
+          <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Git & GitHub</div>
+            <span class="skill-level-tag">Advanced</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="mobile">
+          <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Canva & Design</div>
+            <span class="skill-level-tag">Advanced</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PORTFOLIO SHOWCASE SECTION
+       ========================================================================== -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A showcase of fullstack web portals, mobile applications, admin dashboards, and
+          custom client sites.</p>
+      </div>
+
+      <div class="skills-filter-container portfolio-filter-container">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="addvocate">Addvocate</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="dashboard">Dashboards & CRM</button>
+        <button class="filter-btn" data-filter="web">Web Sites</button>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- Addvocate Project 1: CRM Nudge with AI Agents -->
+        <div class="portfolio-card" data-category="addvocate fullstack dashboard">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/APPflow.png" alt="CRM Nudge with AI Agents">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">Addvocate</span>
+              <span class="tag-pill">AI Agents</span>
+              <span class="tag-pill">CRM</span>
+              <span class="tag-pill">Next.js</span>
+            </div>
+            <h3 class="portfolio-card-title">CRM Nudge with AI Agents</h3>
+            <p class="portfolio-card-desc">
+              Intelligent CRM platform featuring AI agent navigation, dynamic nudges, multi-role access control, and
+              complete CRUD data workflows.
+            </p>
+            <div class="portfolio-card-actions">
+              <span class="portfolio-link view-project-btn" style="cursor: pointer;">Details <i
+                  class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Addvocate Project 2: Mobile App with AI & Chat -->
+        <div class="portfolio-card" data-category="addvocate mobile fullstack">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/sheelni_app.png" alt="Mobile App with AI and Chat">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">Addvocate</span>
+              <span class="tag-pill">React Native</span>
+              <span class="tag-pill">AI Agents</span>
+              <span class="tag-pill">Real-time Chat</span>
+            </div>
+            <h3 class="portfolio-card-title">Mobile App with AI & Chat</h3>
+            <p class="portfolio-card-desc">
+              Cross-platform mobile application integrating conversational AI features, instant real-time messaging
+              chat, and user management.
+            </p>
+            <div class="portfolio-card-actions">
+              <span class="portfolio-link view-project-btn" style="cursor: pointer;">Details <i
+                  class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Addvocate Project 3: Admin Dashboard -->
+        <div class="portfolio-card" data-category="addvocate dashboard fullstack">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/vepee.png" alt="Addvocate Admin Dashboard">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">Addvocate</span>
+              <span class="tag-pill">Next.js</span>
+              <span class="tag-pill">TypeScript</span>
+              <span class="tag-pill">Admin Panel</span>
+            </div>
+            <h3 class="portfolio-card-title">Addvocate Admin Dashboard</h3>
+            <p class="portfolio-card-desc">
+              Centralized admin dashboard featuring real-time data analytics, role-based user management, CRUD tools,
+              and system monitoring.
+            </p>
+            <div class="portfolio-card-actions">
+              <span class="portfolio-link view-project-btn" style="cursor: pointer;">Details <i
+                  class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Addvocate Project 4: Web Browser Extension -->
+        <div class="portfolio-card" data-category="addvocate web fullstack">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/docsappflow.png" alt="Web Browser Extension">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">Addvocate</span>
+              <span class="tag-pill">Plasmo Framework</span>
+              <span class="tag-pill">Chrome Extension</span>
+              <span class="tag-pill">Manifest V3</span>
+            </div>
+            <h3 class="portfolio-card-title">Web Browser Extension</h3>
+            <p class="portfolio-card-desc">
+              Modern Manifest V3 Chrome browser extension engineered with Plasmo framework, side panel views, background
+              service workers, and automated web tools.
+            </p>
+            <div class="portfolio-card-actions">
+              <span class="portfolio-link view-project-btn" style="cursor: pointer;">Details <i
+                  class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Existing Projects -->
+        <div class="portfolio-card" data-category="web">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/docsappflow.png" alt="AppFlow Documentation">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">Docusaurus</span>
+              <span class="tag-pill">Documentation</span>
+              <span class="tag-pill">No-Code</span>
+            </div>
+            <h3 class="portfolio-card-title">AppFlow Documentation</h3>
+            <p class="portfolio-card-desc">
+              Comprehensive developer and end-user documentation platform for AppFlow, a no-code dashboard solution,
+              built using Docusaurus.
+            </p>
+            <div class="portfolio-card-actions">
+              <span class="portfolio-link view-project-btn" style="cursor: pointer;">Details <i
+                  class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Sheelni APP & Dashboard -->
+        <div class="portfolio-card" data-category="mobile dashboard fullstack">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/sheelni.png" alt="Sheelni APP & Dashboard">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">React Native</span>
+              <span class="tag-pill">Mobile App</span>
+              <span class="tag-pill">Dashboard</span>
+            </div>
+            <h3 class="portfolio-card-title">Sheelni APP & Dashboard</h3>
+            <p class="portfolio-card-desc">
+              Cross-platform transport logistics solution for immediate removal, delivery, and movement of household
+              appliances and parcels.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://drive.google.com/file/d/1TUfv_cIk0oqTuNzCyaSZzTBAMRnMf-Jl/view?usp=sharing"
+                target="_blank" class="portfolio-link">
+                View Preview <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Sheelni Web -->
+        <div class="portfolio-card" data-category="web fullstack">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/Sheelnii.JPG" alt="Sheelni Web Platform">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">Full Stack</span>
+              <span class="tag-pill">Web Platform</span>
+              <span class="tag-pill">Logistics</span>
+            </div>
+            <h3 class="portfolio-card-title">Sheelni Web Platform</h3>
+            <p class="portfolio-card-desc">
+              The main web portal for SHEELNI facilitating transport services, quote management, and booking workflows.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://sheelni.dev/" target="_blank" class="portfolio-link">
+                Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Happy Team CRM -->
+        <div class="portfolio-card" data-category="dashboard fullstack">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/HappyTeam.PNG" alt="Happy Team CRM">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">CRM</span>
+              <span class="tag-pill">Node.js</span>
+              <span class="tag-pill">Topnet</span>
+            </div>
+            <h3 class="portfolio-card-title">Happy Team CRM</h3>
+            <p class="portfolio-card-desc">
+              Custom CRM application developed for Topnet Sousse enabling seamless real-time communication and
+              management between teleoperators and customers.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://drive.google.com/file/d/1MP3ykwNTvjlMcQSAtu9mWcnphpHtBuyY/view?usp=sharing"
+                target="_blank" class="portfolio-link">
+                View Preview <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: HEZLI -->
+        <div class="portfolio-card" data-category="fullstack web dashboard">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/project-21.PNG" alt="HEZLI Transporter Website">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">React.js</span>
+              <span class="tag-pill">Styled Components</span>
+              <span class="tag-pill">Transporter</span>
+            </div>
+            <h3 class="portfolio-card-title">HEZLI Logistics</h3>
+            <p class="portfolio-card-desc">
+              Fullstack logistics & transporter web system featuring static vitrine pages, custom responsive navigation,
+              and admin dashboards.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://hezli.fr" target="_blank" class="portfolio-link">
+                Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Deliveat Admin Dashboard -->
+        <div class="portfolio-card" data-category="dashboard">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/deliveat.png" alt="Deliveat Admin Dashboard">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">Dashboard</span>
+              <span class="tag-pill">Food Delivery</span>
+              <span class="tag-pill">UI/UX</span>
+            </div>
+            <h3 class="portfolio-card-title">Deliveat Dashboard</h3>
+            <p class="portfolio-card-desc">
+              Comprehensive food delivery admin dashboard for tracking orders, rider dispatches, restaurant menus, and
+              analytical metrics.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://drive.google.com/file/d/1zluYig_cCyrtB_oAVsw2YmqfovSP2bXJ/view?usp=sharing"
+                target="_blank" class="portfolio-link">
+                View Preview <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Mon Doctor Healthcare -->
+        <div class="portfolio-card" data-category="fullstack dashboard web">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/project-18.PNG" alt="Mon Doctor Healthcare">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">MERN Stack</span>
+              <span class="tag-pill">3 Dashboards</span>
+              <span class="tag-pill">Healthcare</span>
+            </div>
+            <h3 class="portfolio-card-title">Mon Doctor Medical</h3>
+            <p class="portfolio-card-desc">
+              MERN Stack healthcare portal with 3 dedicated admin dashboards for patients, doctors, and clinic
+              administrators.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://64d93843d2d5de4984d980b2--darling-sunburst-7ab514.netlify.app" target="_blank"
+                class="portfolio-link">
+                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Wichat Social App -->
+        <div class="portfolio-card" data-category="fullstack web">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/project-17.png" alt="Wichat Social App">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">MERN Stack</span>
+              <span class="tag-pill">Real-time Chat</span>
+              <span class="tag-pill">Social Media</span>
+            </div>
+            <h3 class="portfolio-card-title">Wichat Social Media</h3>
+            <p class="portfolio-card-desc">
+              Social networking application built on the MERN stack with instant real-time messaging, post feeds, and
+              user profiles.
+            </p>
+            <div class="portfolio-card-actions">
+              <span class="portfolio-link view-project-btn" style="cursor: pointer;">Details <i
+                  class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: WB Movies App -->
+        <div class="portfolio-card" data-category="fullstack web">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/project-22.PNG" alt="WB Movies App">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">React.js</span>
+              <span class="tag-pill">Redux CRUD</span>
+              <span class="tag-pill">Movies</span>
+            </div>
+            <h3 class="portfolio-card-title">WB Movies Portal</h3>
+            <p class="portfolio-card-desc">
+              Interactive movie discovery and management application powered by React and Redux with complete CRUD
+              capabilities.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://64eb4538f3c7705c6f2dc963--cerulean-pony-1aceef.netlify.app" target="_blank"
+                class="portfolio-link">
+                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 10: Academia Education -->
+        <div class="portfolio-card" data-category="web">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/project-15.PNG" alt="Academia Education">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">React.js</span>
+              <span class="tag-pill">E-Learning</span>
+              <span class="tag-pill">Education</span>
+            </div>
+            <h3 class="portfolio-card-title">Academia E-Learning</h3>
+            <p class="portfolio-card-desc">
+              Modern educational web application built with React featuring course catalogs, tutor profiles, and dynamic
+              schedules.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://64eb431e17d1f35d6cf0e021--papaya-bublanina-9f5342.netlify.app" target="_blank"
+                class="portfolio-link">
+                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 11: Todo Redux App -->
+        <div class="portfolio-card" data-category="web">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/project-10.PNG" alt="Todo Redux App">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">React.js</span>
+              <span class="tag-pill">Redux Toolkit</span>
+              <span class="tag-pill">Productivity</span>
+            </div>
+            <h3 class="portfolio-card-title">Todo Task Manager</h3>
+            <p class="portfolio-card-desc">
+              Feature-rich task management tool with filtering, category tags, and persistence implemented with React
+              and Redux Toolkit.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://64d93843d2d5de4984d980b2--darling-sunburst-7ab514.netlify.app" target="_blank"
+                class="portfolio-link">
+                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 12: GroCo E-Commerce -->
+        <div class="portfolio-card" data-category="web">
+          <div class="portfolio-img-wrapper">
+            <img src="./images/projet-6.png" alt="GroCo E-Commerce">
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm view-project-btn">Quick View</button>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags">
+              <span class="tag-pill">HTML5</span>
+              <span class="tag-pill">CSS3</span>
+              <span class="tag-pill">E-Commerce</span>
+            </div>
+            <h3 class="portfolio-card-title">GroCo Online Store</h3>
+            <p class="portfolio-card-desc">
+              Responsive e-commerce vitrine portal for organic grocery shopping with intuitive product categories and
+              promotion banners.
+            </p>
+            <div class="portfolio-card-actions">
+              <a href="https://widedboukouba.github.io/Groco/" target="_blank" class="portfolio-link">
+                Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES SECTION
+       ========================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-cubes-stacked"></i> Pro Capabilities</span>
+        <h2 class="section-title">My Pro <span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">High-impact, production-ready software engineering services tailored for web,
+          mobile, and AI products.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1: Full Stack Web Engineering -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h4>Full Stack Web Engineering</h4>
+          <p>
+            Building high-speed, SEO-optimized web applications from scratch using <strong>Next.js, React, TypeScript,
+              and Tailwind CSS</strong>.
+          </p>
+          <ul
+            style="color: var(--text-muted); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; padding-left: 18px; margin-top: 8px;">
+            <li>Next.js App Router, SSR & Static Site Generation</li>
+            <li>Clean TypeScript (TSX) architecture & Redux state</li>
+            <li>Pixel-perfect responsive mobile-first interfaces</li>
+          </ul>
+        </div>
+
+        <!-- Service 2: Cross-Platform Mobile Apps -->
+        <div class="service-card">
+          <div class="service-icon-box" style="background: var(--gradient-secondary);">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h4>React Native Mobile Apps</h4>
+          <p>
+            Developing native cross-platform mobile apps for iOS and Android using <strong>React Native & Expo
+              CLI</strong>.
+          </p>
+          <ul
+            style="color: var(--text-muted); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; padding-left: 18px; margin-top: 8px;">
+            <li>Native iOS & Android mobile UI performance</li>
+            <li>API integration, push notifications & auth flows</li>
+            <li>Offline data storage & mobile state management</li>
+          </ul>
+        </div>
+
+        <!-- Service 3: AI Feature Integration & Prompting -->
+        <div class="service-card">
+          <div class="service-icon-box" style="background: var(--gradient-emerald);">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h4>AI Integration & Prompting</h4>
+          <p>
+            Integrating intelligent AI capabilities and Large Language Models (LLMs) into digital products.
+          </p>
+          <ul
+            style="color: var(--text-muted); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; padding-left: 18px; margin-top: 8px;">
+            <li>AI Prompt engineering & workflow automation</li>
+            <li>LLM API integration (OpenAI, Gemini APIs)</li>
+            <li>AI-assisted content generation & smart chatbots</li>
+          </ul>
+        </div>
+
+        <!-- Service 4: Chrome Extensions (Plasmo) -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-puzzle-piece"></i>
+          </div>
+          <h4>Browser Extension Development</h4>
+          <p>
+            Creating modern Manifest V3 Chrome browser extensions using the <strong>Plasmo Framework</strong>.
+          </p>
+          <ul
+            style="color: var(--text-muted); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; padding-left: 18px; margin-top: 8px;">
+            <li>Content scripts, side panels & popup UIs</li>
+            <li>DOM automation & productivity tools</li>
+            <li>Background service workers & API integrations</li>
+          </ul>
+        </div>
+
+        <!-- Service 5: Backend APIs & Databases -->
+        <div class="service-card">
+          <div class="service-icon-box" style="background: var(--gradient-secondary);">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h4>Backend APIs & DB Architecture</h4>
+          <p>
+            Designing resilient backend microservices and databases using <strong>Node.js, PostgreSQL, MongoDB, and
+              Prisma</strong>.
+          </p>
+          <ul
+            style="color: var(--text-muted); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; padding-left: 18px; margin-top: 8px;">
+            <li>RESTful API design & secure JWT authentication</li>
+            <li>Prisma ORM & Mongoose database schema modeling</li>
+            <li>Strapi Headless CMS setup & custom API plugins</li>
+          </ul>
+        </div>
+
+        <!-- Service 6: Enterprise CRM & Dashboards -->
+        <div class="service-card">
+          <div class="service-icon-box" style="background: var(--gradient-emerald);">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h4>Enterprise CRM & Dashboards</h4>
+          <p>
+            Architecting specialized business CRM platforms, logistics management dashboards, and data control centers.
+          </p>
+          <ul
+            style="color: var(--text-muted); font-size: 0.88rem; display: flex; flex-direction: column; gap: 6px; padding-left: 18px; margin-top: 8px;">
+            <li>Teleoperator & client interconnection CRM panels</li>
+            <li>Live logistics tracking & dispatch controls</li>
+            <li>Role-based access control (RBAC) & analytics</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Work Together</span></h2>
+        <p class="section-subtitle">Have a project idea, job opportunity, or consultation request? Feel free to reach
+          out!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards">
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Email Address</h5>
               <p>widedboukouba64@gmail.com</p>
             </div>
-            <div class="contact-info-item padd-15">
-              <div class="icon"> <i class="fa fa-globe-europe"></i></div>
-              <h4>Linkedin</h4>
-              <p>https://tn.linkedin.com/in/wided-boukouba-2549a9250</p>
+            <button class="copy-btn" data-copy="widedboukouba64@gmail.com" title="Copy Email">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Phone Number</h5>
+              <p>+216 99 361 884</p>
+            </div>
+            <button class="copy-btn" data-copy="+21699361884" title="Copy Phone Number">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-details">
+              <h5>Location</h5>
+              <p>Tunis / Medenine, Tunisia (Open to Remote)</p>
             </div>
           </div>
-       
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-details">
+              <h5>LinkedIn Profile</h5>
+              <p>wided-boukouba-2549a9250</p>
+            </div>
+            <a href="https://tn.linkedin.com/in/wided-boukouba-2549a9250" target="_blank" class="copy-btn"
+              style="text-decoration: none;" title="Open LinkedIn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
         </div>
-      </section>
 
+        <div class="contact-form-container">
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="formName">Your Name</label>
+              <input type="text" id="formName" class="form-control" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="formEmail">Your Email</label>
+              <input type="email" id="formEmail" class="form-control" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="formSubject">Subject</label>
+              <input type="text" id="formSubject" class="form-control" placeholder="Project Inquiry / Job Opportunity"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="formMessage">Message</label>
+              <textarea id="formMessage" class="form-control"
+                placeholder="Tell me about your project or requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          &copy; <span id="year">2026</span> Wided Boukouba. All Rights Reserved. Crafted with passion & precision.
+        </div>
 
+        <div class="social-links">
+          <a href="https://tn.linkedin.com/in/wided-boukouba-2549a9250" target="_blank" class="social-link"
+            title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/widedboukouba" target="_blank" class="social-link" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:widedboukouba64@gmail.com" class="social-link" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTop" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Quick View Modal Overlay -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div
+        style="width: 100%; height: 300px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px; background: #0f172a;">
+        <img id="modalImg" src="" alt="Project Image" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <h3 id="modalTitle"
+        style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; margin-bottom: 12px; color: var(--text-main);">
+      </h3>
+      <div id="modalTags" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;"></div>
+      <p id="modalDesc" style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 24px;"></p>
+      <div>
+        <a id="modalLink" href="#" target="_blank" class="btn btn-primary btn-sm">
+          <span>Visit Live Project</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-  <div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
-      <i class="fas fa-cog fa-spin"></i>
-    </div>
-    <div class="day-night s-icon">
-      <i class="fas "></i>
-    </div>
-    <h4>Theme Colors</h4>
-    <div class="colors">
-      <span class="color-1" onclick="setActiveStyle('color-1') "></span>
-      <span class="color-2" onclick="setActiveStyle('color-2') "></span>
-      <span class="color-3" onclick="setActiveStyle('color-3') "></span>
-      <span class="color-4" onclick="setActiveStyle('color-4') "></span>
-      <span class="color-5" onclick="setActiveStyle('color-5') "></span>
-    </div>
+  <!-- Copy Notification Toast -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald); font-size: 1.3rem;"></i>
+    <span id="toastMsg">Action completed successfully!</span>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-    referrerpolicy="no-referrer"></script>
+
+  <!-- JavaScript Engine -->
   <script src="js/script.js"></script>
-  <script src="./js/style-switcher.js"></script>
-  <script>
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function () {
-      loader.style.display = "none";
-    })
-  </script>
-  <script>(function () {
-        var follower, init, mouseX, mouseY, positionElement, printout, timer;
-
-        follower = document.getElementById('follower');
-
-        printout = document.getElementById('printout');
-
-        mouseX = (event) => {
-          return event.clientX;
-        };
-
-        mouseY = (event) => {
-          return event.clientY;
-        };
-
-        positionElement = (event) => {
-          var mouse;
-          mouse = {
-            x: mouseX(event),
-            y: mouseY(event)
-          };
-          follower.style.top = mouse.y + 'px';
-          return follower.style.left = mouse.x + 'px';
-        };
-
-        timer = false;
-
-        window.onmousemove = init = (event) => {
-          var _event;
-          _event = event;
-          return timer = setTimeout(() => {
-            return positionElement(_event);
-          }, 1);
-        };
-
-      }).call(this);
-
-  </script>
-
 </body>
 
 </html>
